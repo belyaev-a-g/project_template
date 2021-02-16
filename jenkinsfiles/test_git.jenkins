@@ -34,7 +34,7 @@ pipeline {
                 				deleteDir() /* clean up our workspace */
                  git(
 			 url:'git@github.com:belyaev-a-g/project_template.git',
-			 credentialsId: 'projectname1_git',
+			 credentialsId: 'github_key_centos',
 			 branch: 'master'
 		 )
                 echo "Finish GIT"                
