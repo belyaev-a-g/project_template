@@ -33,7 +33,8 @@ pipeline {
                 echo "Start GIT"                
                 				deleteDir() /* clean up our workspace */
                  git(
-			 url: https://github.com/belyaev-a-g/project_template.git
+			 url:git@github.com:belyaev-a-g/project_template.git
+			 //url: https://github.com/belyaev-a-g/project_template.git
 			 branch: 'master'
 		 )
                 echo "Finish GIT"                
