@@ -30,12 +30,13 @@ pipeline {
         }
         stage("Get git source") {
             steps {
-                echo "Start GIT"                
-                				deleteDir() /* clean up our workspace */
+                echo "Start GIT"
+		    echo "Get from GIT $BRANCHNAME"
+		    deleteDir() /* clean up our workspace */
                  git(
 			 url:'git@github.com:belyaev-a-g/project_template.git',
 			 credentialsId: 'github_key_centos',
-			 branch: 'master'
+			 branch: '$BRANCHNAME'
 		 )
                 echo "Finish GIT"                
             }
