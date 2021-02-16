@@ -33,11 +33,9 @@ pipeline {
                 echo "Start GIT"                
                 				deleteDir() /* clean up our workspace */
                  git(
-                     url: https://github.com/belyaev-a-g/project_template.git
-					//url: 'git@gitlab.company.ru:projectname/infra-repo.git',
-					//credentialsId: 'projectname1_git',
-					branch: 'master'
-				)
+			 url: https://github.com/belyaev-a-g/project_template.git
+			 branch: 'master'
+		 )
                 echo "Finish GIT"                
             }
         }
