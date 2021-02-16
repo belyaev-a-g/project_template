@@ -23,5 +23,12 @@ pipeline {
                 sh 'ssh root@alexu \'uptime\''
             }
         }
+        
+        stage("Third step") {
+            steps {
+                echo "BRANCHNAME = $BRANCHNAME"
+                
+            }
+        }
     }
 }
