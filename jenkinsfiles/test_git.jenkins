@@ -15,8 +15,6 @@ pipeline {
             steps {
                 echo "ORGNAME -  $ORGNAME"
                 echo "MOOD -  $MOOD"
-                echo $ORGNAME
-                echo $MOOD
                 sh 'ssh root@alexu \'hostname\''
             }
         }
