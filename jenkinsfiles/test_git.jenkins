@@ -22,13 +22,7 @@ pipeline {
             steps {
                 sh 'ssh root@alexu \'uptime\''
             }
-        } 
-	    if($MAKE_TEST) {
-		    stage("Make test") {
-            steps {
-                echo "Make test"                
-            }
-        }
+        }    
 		    
 	    }
 	    
